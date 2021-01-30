@@ -366,7 +366,7 @@ public class Project_1 {
 			countDate = newFormat.parse(countString);
 		}
 		catch(ParseException e) {
-			System.out.print("invalid date, returning to menu");
+			System.out.println("invalid date, returning to menu");
 			menu();
 		}
 		countDate = newFormat.parse(countString);
@@ -379,7 +379,7 @@ public class Project_1 {
 			Movie_Class movie = comingIterator.next();
 			if(movie.getReleaseDate().compareTo(countDate) >= 0) {
 				noMovies = false;
-				System.out.print("The amount of movies coming before " + countDate + " is " + count);
+				System.out.println("The amount of movies coming before " + newFormat.format(countDate) + " is " + count);
 				menu();
 			}
 			else {
@@ -389,7 +389,7 @@ public class Project_1 {
 		
 		//if all movies are released before the user's, the program will let them know
 		if(noMovies) {
-			System.out.print("All of our coming movies is coming out before your release date, congratulations!");
+			System.out.println("All of our coming movies is coming out before your release date, congratulations!");
 			menu();
 		}
 	}
