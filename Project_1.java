@@ -1,3 +1,9 @@
+/*
+*Samuel Maynard
+*Dalton Vining
+*Shane Callaway
+*/
+
 import java.io.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
